@@ -1,16 +1,67 @@
-# React + Vite
+# 📇 Lista de Contatos — React + Redux + Styled Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido como parte do **Projeto 5**, com o objetivo de aplicar conceitos de **React**, **Redux** e **Styled Components**, criando uma lista de contatos funcional e estilizada.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objetivo do Projeto
 
-## React Compiler
+Criar uma aplicação em React que permita o gerenciamento de uma lista de contatos, utilizando Redux para o controle de estado global e Styled Components para estilização, seguindo boas práticas de organização e responsividade.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React 18**
+- **TypeScript**
+- **Redux Toolkit**
+- **React Redux**
+- **Styled Components**
+- **Vite**
+- **Git & GitHub**
+
+---
+
+## ✨ Funcionalidades
+
+- ➕ Adicionar contatos
+- ➖ Remover contatos
+- 📄 Listar contatos cadastrados
+- 🎨 Tema escuro (Dark Mode)
+- 📱 Layout responsivo (Mobile First)
+
+Cada contato contém:
+- Nome completo
+- E-mail
+- Telefone
+
+---
+
+## 🎨 Estilização
+
+- Tema escuro personalizado
+- Paleta de cores com **roxo e vermelho**
+- Utilização de **ThemeProvider**
+- Componentes estilizados exclusivamente com **Styled Components**
+- Interface moderna e intuitiva
+
+---
+
+## 🗂️ Estrutura do Projeto
+
+```text
+src/
+├─ app/
+│  └─ store.ts
+├─ components/
+│  ├─ ContactForm.tsx
+│  └─ ContactList.tsx
+├─ features/
+│  └─ contacts/
+│     └─ contactsSlice.ts
+├─ styles/
+│  ├─ GlobalStyle.ts
+│  └─ theme.ts
+├─ types.ts
+├─ App.tsx
+└─ main.tsx
